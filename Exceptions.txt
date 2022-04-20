@@ -1,0 +1,87 @@
+
+ *What is Exceptions in Java?
+
+          An Event,Which occurs during the execution of a program, that disrupts the normal flow of the programs instructions.
+
+ *** Exceptions Categories *******
+
+    1-Checked Exceptions :- These are Exceptions which are caught by the Java compiler and need to be handle by Developer.Need
+                           to be specified or handled with a Try-Catch block.
+    2-UnChecked Exceptions :-These are not pointed out by the compiler but a good dev. should anticipate and handle them or
+                identify them during the development and testing phases of a program.
+   3- Errors :- These represents very serious problems encounter during the programs execution and which cannot really be recovered
+             From,at which point,there is usually no other option than to terminate the programs execution.but before we do so,we can do
+             some logic to carry out some steps before we explicitly shut down our app.
+
+   **** Try-Catch Block   ****
+
+          Potentially risky code can be enclosed inside a try block( that is code where an exception might be thrown ) and
+           logic to handle the execution can be set in a Catch block right after it.
+    1- Our program can run through to completion or we can terminate it gracefully on our own terms.
+    2- So even if you have a multiple lines within your try block and not just two if an exception occurs during the execution,
+       any lines occurring  after it will be ignored,and code execution moved over to the catch block.
+
+
+
+   **** Finally  Block   ****
+
+                Include a Finally block after the try-Catch block.A finally block is very often used in order to carry out some clean up operation
+                after the code has run.for Example:- you could free up some resources which were being help by the program or maybe carry out some write operations before the program
+                either moves along or terminates.Finally block runs will execute whether or not an exception is thrown.which is why it is defined at the end of a try catch block.
+       1- One Feature of the finally block is that it can exist even without a catch.
+       2- The Finally block is always executed when it is attached to a try and catch, and also a try without a catch.
+       3- Primary purpose :-To write clean-up code which will always be executed regardless of whether an exception is thrown.
+
+
+***************************************************************************************************************************************************************************
+
+ 1- One Feature when we have multiple catch block after a single try block is that the order of the catch blocks doesn't
+    really matter.
+
+    ********* Try With Resource Block   ***********
+
+    Any class which implements the Java.lan.AutoClosable Interface can be used in the TryWithResourceBlock.This will allow java to auto close
+    that resource once the try block or the associate catch block has been executed,whether there is an exception or not.
+    1- To automatically close an object once the block has executed.
+
+
+***************************************************************************************************************************************************************************
+
+    ..............JAVA COLLECTIONS FRAMEWORKS........
+
+    The Java collection frameworks refers to a set of Classes and interfaces that implement commonly reusable data structures.Although the collection framework is referred to as
+    a framework,its actually a library.The Collection framework provide both interfaces that defines various collections.These interface represent different types of collections Such as List,Maps  and so on.
+    And we have different classes implementing these interfaces.So you can choose the right collection to store your data based on your use case.
+
+    ****** JAVA ARRAYS  *******
+
+    Java Array are the first kind of collections that you encountered.They are not really part of java collection framework,but bcz arrays are basically a collection of Elements,its important
+    that you understand and study the characteristics of arrays first before we move on java collections.
+    An array can be a though of as a fixed length and fixed types of collection.Its a collection of objects where the type of the object or the type of the class that you are storing the array
+    and the number of objects are specified up front.And once these specify,these cannot be MODIFIED after the array has been created.
+
+
+    ******    List In JAVA   ************
+
+        The Most widely used collection structure is the List.The List stores data in an ordered sequence,and the list allows you to store a duplicate
+        values.The Java collections framework provides a number of different list implementations.
+
+
+    ******    Sets and Maps In JAVA   ************
+
+    Sets:- allow you to store values that are Unique in an Unordered Structure,and do not permit you to add elements that are duplicates of elements
+           already present in the set.Perform a no. of different operations on sets, including Union,Intersection,Difference and subset operations.
+
+    Maps:- Allow you to store data in the form of KEY VALUES pairs,thus enabling you to quickly loop up values associated with keys.
+
+    1- So if you are going to be defining custom objects that have to be added to collection containers in the java framework,make sure that you override
+       the .equals method from the base class as well as the Hash Code methods so that the object are compared correctly.
+    2- Java Collections framework has a no.of different implementations of the SET Interface.All of these implementations also implement
+       the Collection and iterable interfaces as well.
+    3- There are other sets that implements these interface as well,Such as the LinkedHashSet.
+    4- Ordering of Elements in " HASHSet" ,it returns in a random order.
+    5- In LinkedHashSet the Elements are Accessible in the Insertion order.
+    6- In TreeSet:- In the case of Integer set will return these elements to me in the ascending order by default.
+    7- In TreeSet:- In the case of string this natural order is the Lexicographical or Alphabetical order.
+
+

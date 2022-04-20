@@ -1,0 +1,28 @@
+
+
+   What is Generics in Java?
+
+    The Concept of generics in java enabled types in java such as interfaces and classes to parameters while you are defining
+    other classes,interfaces and methods.So much like you have parameters that you pass in as input arguments to methods,you can
+    have parameters defined when you define your class,method or interface specifying that these are the types that this class method
+    or interface recognizes.
+
+   *** Code written using generics have several advantages over non-generics code.*****
+
+    1- Using generics in your java code that several checks which occur at runtime to ensure that the data that you are using is of the
+       right type will become compile time checks.So with generics, you are actually converting runtime checks to compile time checks,
+       which makes your code more robust and allows you to catch errors very early.
+    2- Generics allow extensive code reuse,and when you reuse your code,maintaining that code becomes much easier.let's take a example of the collection framework.
+       instead of having a separate collection class for strings,Integers,dates and any other data type,we have the same collection class
+       that can hold any kind of data.Thus we've collapsed several classes,maybe thousand of classes to a single class than can work
+       with any kind of data.
+
+ 1- In a NON-GENERICS world if you want to have a repositories that hold different kinds of data,one technique to achieve this is to have a
+    separate repository class for each data type.which is not a good practice.
+2- Rather than having different classes  holding different types of data,we'll create a single java class that holds all kinds of data.
+   however we won't have this repository class via generics class yet.
+
+3- Once you have a Generic class,you should be able to get it to work with any data type,Even user defined data Types.
+4- Generic classes are able to handle Custom Objects as well.
+5- The value of the type parameter is associated with the Object of the repository class and not with the class itself.
+6- Any Generic class that you have defined,one that uses type parameters can be instantiated using its RAW type.
